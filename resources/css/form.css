@@ -1,0 +1,81 @@
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Comfortaa', Arial, sans-serif;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--card-background);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #6c4658;
+}
+
+form img{
+    width: 100px;
+    margin: 10px;
+}
+
+@media (max-width: 1079px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 479px) {
+
+    form {
+        padding: 0 12px 0 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
